@@ -8,8 +8,6 @@ const UserList = memo(() => {
   const { users } = useUser()
   const { theme } = useTheme()
 
-  console.log('🔄 UserList render')
-
   return (
     <div className={`${styles.container} ${styles[theme]}`}>
       <h2 className={styles.title}>User List ({users.length})</h2>

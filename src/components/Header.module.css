@@ -116,3 +116,38 @@
     background-color: #e67e22;
   }
 }
+.actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.addUserContainer {
+  position: relative;
+}
+
+.addButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-weight: 500;
+  background-color: #2ecc71;
+}
+
+.addButton:hover {
+  transform: translateY(-2px);
+  background-color: #27ae60;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.addButton_dark {
+  background-color: #27ae60;
+}
+
+.addButton_dark:hover {
+  background-color: #2ecc71;
+}
