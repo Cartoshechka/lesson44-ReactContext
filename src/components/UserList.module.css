@@ -1,0 +1,41 @@
+.container {
+  padding: 20px;
+  min-height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.container.light {
+  background-color: #fff;
+}
+
+.container.dark {
+  background-color: #34495e;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.container.light .title {
+  color: #2c3e50;
+}
+
+.container.dark .title {
+  color: #ecf0f1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
